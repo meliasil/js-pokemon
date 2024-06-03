@@ -58,7 +58,7 @@ btnAdd.addEventListener("click", function () {
 	}
 })
 
-
+const itemModified = 'questa è la mia modifica';
 
 
 
