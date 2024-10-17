@@ -47,6 +47,30 @@ header h1 {
   justify-content: center;
   gap: 10px;
   border-radius: 16px;
+  background-color: #fff; /* Colore di sfondo di default */
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  opacity: 0; /* Imposta l'opacità a 0 per l'animazione */
+  animation: fadeIn 0.5s forwards; /* Applica l'animazione di apparizione */
+}
+
+/* Animazione di apparizione */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Hover effect */
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
 
 .card__img {
@@ -130,4 +154,24 @@ header h1 {
 
 .rock {
   background: #d5d5d4;
+}
+
+/* Effetti per i bottoni */
+.btn-add,
+button {
+  padding: 10px 15px; /* Aggiungi padding ai bottoni */
+  border: none;
+  border-radius: 5px;
+  background-color: #1976d2; /* Colore di sfondo dei bottoni */
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-add:hover,
+button:hover {
+  background-color: #1565c0; /* Colore di sfondo al passaggio del mouse */
+  transform: scale(
+    1.05
+  ); /* Aumenta leggermente la dimensione al passaggio del mouse */
 }
