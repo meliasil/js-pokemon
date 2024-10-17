@@ -1,4 +1,4 @@
-/* GENERAL */
+
 * {
   margin: 0;
   padding: 0;
@@ -15,21 +15,21 @@ body {
   );
 }
 
-/* LAYOUT */
+
 .layout {
   margin: 0 auto;
   max-width: 1200px;
 }
 
-/* HEADER */
+
 header h1 {
   text-align: center;
   margin-top: 2rem;
   margin-bottom: 2rem;
 }
 
-/* MAIN */
-/* Card List */
+
+
 .card-list {
   display: flex;
   flex-wrap: wrap;
@@ -37,7 +37,7 @@ header h1 {
   justify-content: center;
 }
 
-/* Card */
+
 .card {
   width: 180px;
   padding: 20px;
@@ -47,15 +47,15 @@ header h1 {
   justify-content: center;
   gap: 10px;
   border-radius: 16px;
-  background-color: #fff; /* Colore di sfondo di default */
+  background-color: #fff; 
   overflow: hidden;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
-  opacity: 0; /* Imposta l'opacità a 0 per l'animazione */
-  animation: fadeIn 0.5s forwards; /* Applica l'animazione di apparizione */
+  opacity: 0; 
+  animation: fadeIn 0.5s forwards;
 }
 
-/* Animazione di apparizione */
+
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -67,7 +67,7 @@ header h1 {
   }
 }
 
-/* Hover effect */
+
 .card:hover {
   transform: translateY(-5px);
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
@@ -156,13 +156,13 @@ header h1 {
   background: #d5d5d4;
 }
 
-/* Effetti per i bottoni */
+
 .btn-add,
 button {
-  padding: 10px 15px; /* Aggiungi padding ai bottoni */
+  padding: 10px 15px; 
   border: none;
   border-radius: 5px;
-  background-color: #1976d2; /* Colore di sfondo dei bottoni */
+  background-color: #1976d2; 
   color: white;
   cursor: pointer;
   transition: background-color 0.3s ease, transform 0.3s ease;
@@ -170,8 +170,8 @@ button {
 
 .btn-add:hover,
 button:hover {
-  background-color: #1565c0; /* Colore di sfondo al passaggio del mouse */
+  background-color: #1565c0;
   transform: scale(
     1.05
-  ); /* Aumenta leggermente la dimensione al passaggio del mouse */
+  ); 
 }
